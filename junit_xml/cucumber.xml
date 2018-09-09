@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.189142">
-<testcase classname="Feature file for Tag" name="Testing private Scenario" time="0.189142">
-<system-out><![CDATA[Given private Application...................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.300431">
+<testcase classname="Hook functionality in cucumber" name="Hook functionality scenario 1" time="0.298595">
+<system-out><![CDATA[Given user is on login screen...............................................passed
+When title is my account....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Hook functionality in cucumber" name="Hook functionality scenario 2" time="0.001836">
+<system-out><![CDATA[Then user enters username and password......................................passed
+Then user clicks on login button............................................passed
+Then user logged in successfully to application.............................passed
 ]]></system-out>
 </testcase>
 </testsuite>
