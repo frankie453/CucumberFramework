@@ -6,7 +6,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="C:\\Users\\Rohit\\eclipse-workspace\\CucumberBDDFramework\\src\\main\\java\\features\\login.feature", // path of feature file
+		features="C:\\Users\\Rohit\\eclipse-workspace\\CucumberBDDFramework\\src\\main\\java\\features\\loginDataDrivenTable.feature", // path of feature file
 		glue= {"stepDefination"}, // path of step definition file
 		format= {"pretty","html:test-output", "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml"}, // pretty will generate console report
 		monochrome=true, // to display the console output in proper readable format
