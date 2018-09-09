@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="12.936038">
+<testcase classname="ABSoft login feature" name="ABSoft login test scenario" time="12.936038">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given user is already on login page.........................................passed
+When title of the page is My Account........................................passed
+Then user enter username and password.......................................passed
+Then user click on login button.............................................passed
+Then user logged in successfully............................................undefined
+]]></failure>
+</testcase>
+</testsuite>
