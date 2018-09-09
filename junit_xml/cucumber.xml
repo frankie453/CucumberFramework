@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="31.543039">
-<testcase classname="ABSoft login using data driven with map feature" name="ABSoft login test scenario" time="31.543039">
-<system-out><![CDATA[Given user is already on login page.........................................passed
-When title of the page is My Account........................................passed
-Then user enter username and password.......................................passed
-Then user click on login button.............................................passed
-Then user logged in successfully............................................passed
-Then user search orderId....................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.189142">
+<testcase classname="Feature file for Tag" name="Testing private Scenario" time="0.189142">
+<system-out><![CDATA[Given private Application...................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
