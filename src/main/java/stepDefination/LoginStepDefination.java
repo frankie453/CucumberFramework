@@ -28,10 +28,20 @@ public class LoginStepDefination {
 	    Assert.assertEquals("My Account | ABSoft Trainings – E-Commerce test web site", title);
 	}
 
-	@Then("^user enter username and password$")
+	/*@Then("^user enter username and password$")
 	public void user_enter_username_and_password() {
 	    driver.findElement(By.name("username")).sendKeys("testuser2");
 	    driver.findElement(By.name("password")).sendKeys("testpwd2");
+	}*/
+	
+	// Regular Expression
+	//1. \"(.*)\"
+	//2. "\([^\"]*)\"
+	
+	@Then("^user enters \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_enters_and(String username, String password) {
+		driver.findElement(By.name("username")).sendKeys(username);
+	    driver.findElement(By.name("password")).sendKeys(password);
 	}
 	
 	@Then("^user click on login button$")
@@ -42,7 +52,7 @@ public class LoginStepDefination {
 	@Then("^user logged in successfully$")
 	public void user_logged_in_successfully() {
 		String text=driver.findElement(By.id("user_info")).getText();
-		Assert.assertTrue(text.contains("testuser2"));
+		Assert.assertTrue(text.contains("testuser"));
 		driver.quit();
 	}
 }

@@ -3,19 +3,19 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
+        "line": 25,
         "name": "ABSoft login test scenario",
         "description": "",
-        "id": "absoft-login-feature;absoft-login-test-scenario",
+        "id": "absoft-login-feature;absoft-login-test-scenario;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 8187163932,
+              "duration": 9922204898,
               "status": "passed"
             },
-            "line": 5,
+            "line": 17,
             "name": "user is already on login page",
             "match": {
               "location": "LoginStepDefination.user_is_already_on_login_page()"
@@ -24,10 +24,10 @@
           },
           {
             "result": {
-              "duration": 11019809,
+              "duration": 15217461,
               "status": "passed"
             },
-            "line": 6,
+            "line": 18,
             "name": "title of the page is My Account",
             "match": {
               "location": "LoginStepDefination.title_of_the_page_is_My_Account()"
@@ -36,22 +36,36 @@
           },
           {
             "result": {
-              "duration": 269332391,
+              "duration": 283008319,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user enter username and password",
+            "line": 19,
+            "name": "user enters \"testuser3\" and \"testpwd3\"",
             "match": {
-              "location": "LoginStepDefination.user_enter_username_and_password()"
+              "arguments": [
+                {
+                  "val": "testuser3",
+                  "offset": 13
+                },
+                {
+                  "val": "testpwd3",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginStepDefination.user_enters_and(String,String)"
             },
+            "matchedColumns": [
+              0,
+              1
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 4468522336,
+              "duration": 4008926526,
               "status": "passed"
             },
-            "line": 8,
+            "line": 20,
             "name": "user click on login button",
             "match": {
               "location": "LoginStepDefination.user_click_on_login_button()"
@@ -60,11 +74,99 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1055640535,
+              "status": "passed"
             },
-            "line": 9,
+            "line": 21,
             "name": "user logged in successfully",
-            "match": {},
+            "match": {
+              "location": "LoginStepDefination.user_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "ABSoft login test scenario",
+        "description": "",
+        "id": "absoft-login-feature;absoft-login-test-scenario;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7695741919,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user is already on login page",
+            "match": {
+              "location": "LoginStepDefination.user_is_already_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8701967,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "title of the page is My Account",
+            "match": {
+              "location": "LoginStepDefination.title_of_the_page_is_My_Account()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 221556756,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enters \"testuser2\" and \"testpwd2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "testuser2",
+                  "offset": 13
+                },
+                {
+                  "val": "testpwd2",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginStepDefination.user_enters_and(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3974343217,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user click on login button",
+            "match": {
+              "location": "LoginStepDefination.user_click_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 104251184,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefination.LoginStepDefination.user_logged_in_successfully(LoginStepDefination.java:55)\r\n\tat ✽.Then user logged in successfully(C:/Users/Rohit/eclipse-workspace/CucumberBDDFramework/src/main/java/features/login.feature:21)\r\n",
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "user logged in successfully",
+            "match": {
+              "location": "LoginStepDefination.user_logged_in_successfully()"
+            },
             "keyword": "Then "
           }
         ]
